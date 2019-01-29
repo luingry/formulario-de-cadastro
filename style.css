@@ -91,6 +91,7 @@ body{
 	display: none;
 	height: 400px;
 	width: 400px;
+	
 }
 .box-group__item--active{
 	display: block;
