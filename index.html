@@ -26,17 +26,12 @@
 					<div class="item item--active">
 						<span class="box-title">Cadastro de Modelos</span>
 						<div class="input-container">
-							<input disabled type="text" name="codigo" value="1" required>
-							<label>Código</label>
+							<input id="codigo" disabled type="text" name="codigo" value="1" required>
+							<label for="codigo">Código</label>
 							<span class="input-underline"></span>
 						</div>
 						<div class="input-container">
-							<input type="text" name="modelo" value="Imóvel" required>
-							<label>Modelo</label>
-							<span class="input-underline"></span>
-						</div>
-						<div class="input-container">
-							<input for="modelo" type="text" name="modelo" value="" required>
+							<input id="modelo" type="text" name="modelo" value="Imóvel" required>
 							<label for="modelo">Modelo</label>
 							<span class="input-underline"></span>
 						</div>
@@ -59,7 +54,7 @@
 								<div class="button button--delete"><span>Excluir</span></div>
 							</div>
 						<div class="divider divider-color"></div>
-						<span>Duplo clique nos grupos de modelos para editar, ou botão direito para excluir (isto deve ser dica)</span>
+						<span class="tip-box tip-box--info"><i class="fas fa-info-circle"></i>Duplo clique nos grupos de modelos para editar, ou botão direito para excluir (isto deve ser dica)</span>
 						<div class="grupos-de-modelos">
 							<table>
 								<tbody>

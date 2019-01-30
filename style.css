@@ -91,6 +91,9 @@ html, body, .main-container{
 	width: 320px;
 	z-index: 2;
 }
+.side-menu .item span{
+	color: #FAFAFA
+}
 .main-content{
 	height: 100%;
 	margin-left: 320px;
@@ -194,4 +197,24 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 	display: block;
 	margin-bottom: 40px;
 	width: 100%;
+}
+.tip-box i{
+	color: #91b5ca;
+	font-size: 18px;
+	margin-right: 10px;
+}
+.tip-box{
+	align-items: center;	
+	border: 1px solid;
+	border-radius: 2px;	
+	display: flex;
+	font-size: 13px;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+.tip-box--info{
+	background-color: #dcf2ff;
+	border-color: #91b5ca;
+	color: #91b5ca;
 }
