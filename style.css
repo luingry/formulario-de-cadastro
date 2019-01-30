@@ -187,7 +187,7 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 }
 .box-title{
 	display: block;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 40px;
   text-align: center;
@@ -230,4 +230,10 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 .radio-container input:checked + label{
 	background: #bfbfbf;
   color: #fafafa;
+}
+.group-title{
+	display: block;
+	font-size: 15px;
+	margin: 10px 0;
+	width: 100%;
 }
