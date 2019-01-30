@@ -5,36 +5,81 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 		<title>Cadastro de Imóveis</title>
 	</head>
 	<body>
 		<div class="main-container">
 			<nav class="side-menu dark-primary-color">
-				<div class="side-menu__logo">LOGO HERE</div>
-				<ul class="side-menu__link-list">
-					<li class="link-list__item">
-						<span>Modelos</span>
-						<ul class="item__sub-menu">
-							<li class="sub-menu__item">
-								<span>Grupos de Modelos</span>
-							</li>
-							<li class="sub-menu__item">
-								<span>Campos de Modelos</span>
-							</li>
-							<li class="sub-menu__item">
-								<span>Respostas dos Campos do Modelos</span>
-							</li>
-						</ul>
+				<div class="logo">LOGO HERE</div>
+				<ul class="link-list">
+					<li class="item">
+						<span>Modelos de formulários</span>
 					</li>
 				</ul>
+				<div class=""></div>
 			</nav>
 			<div class="main-content light-primary-color">
 				<div class="box-group">
-					<div class="box-group__item box-group__item--active">Grupos de Modelos</div>
-					<div class="box-group__item">Campos de Modelos</div>
-					<div class="box-group__item">Respostas dos Campos do Modelos</div>
+					<div class="item item--active">Cadastrar novo modelo ou ver modelos existentes<br> Interação do botão salvar ao editar qualquer informação</div>
+					<div class="item item--active">
+						Cadastro de Modelos
+						<div class="input-container">
+							<label>Código</label>
+							<input disabled="true" type="text" name="codigo" value="1">
+						</div>
+						<div class="input-container">
+							<label>Modelo</label>
+							<input type="text" name="modelo" value="Imóvel">
+						</div>
+						<div class="radius-container">
+							<input id="imovel" type="radio" name="modelo" value="imovel">
+							<label for="imovel">Imóvel</label>
+							<input id="movel" type="radio" name="modelo" value="movel"><label for="movel">Móvel</label>
+							<input id="cnae" type="radio" name="modelo" value="cnae"><label for="cnae">CNAE</label>
+							<input id="rural" type="radio" name="modelo" value="rural"><label for="rural">Rural</label>
+							<input id="condominio" type="radio" name="modelo" value="condominio"><label for="condominio">Condominio</label>
+							<input id="avulso" type="radio" name="modelo" value="avulso"><label for="avulso">Avulso</label>
+						</div>
+						<div class="form-options">
+								<div class="button button--add"><span>Novo modelo</span></div>
+								<div class="button button--save"><span>Salvar</span></div>
+								<div class="button button--delete"><span>Excluir</span></div>
+							</div>
+						<div class="divider divider-color"></div>
+						<span>Duplo clique nos grupos de modelos para editar, ou botão direito para excluir (isto deve ser dica)</span>
+						<div class="grupos-de-modelos">
+							<table>
+								<tbody>
+									<tr>
+										<th>Código</th>
+										<th>Grupo de modelo</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Características do imóvel</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Características das Edificações</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Localização</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="form-options">
+								<div class="button button--add"><span>Adicionar</span></div>
+								<div class="button button--save"><span>Salvar</span></div>
+								<div class="button button--delete"><span>Excluir</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">Grupos de Modelos</div>
+					<div class="item">Campos de Modelos</div>
+					<div class="item">Respostas dos Campos do Modelos</div>
 				</div>
 			</div>
 		</div>
