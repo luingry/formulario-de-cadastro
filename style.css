@@ -111,6 +111,8 @@ html, body, .main-container{
 	flex-wrap: wrap;
 	height: 100%;
 	justify-content: center;
+	margin: auto;
+	max-width: 1000px;
 	padding: 20px;
 }
 .box-group .item{
@@ -242,7 +244,14 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 }
 .logo{
 	background: white;
+	box-sizing: border-box;
+	left: 0;
 	padding: 50px;
+	position: relative;
+	width: 100%;
+}
+.link-list{
+	overflow: hidden;
 }
 .link-list .item{
 	align-items: center;
@@ -265,6 +274,7 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 	background-color: rgba(255, 255, 255, 0.3)
 }
 .side-menu-toggle{
+	border-radius: 0 2px 2px 0;
   color: #fafafa;
   cursor: pointer;
   font-size: 20px;
@@ -277,4 +287,20 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 }
 .side-menu-toggle:hover{
 	opacity: 0.8;
+}
+.side-menu.side-menu-decreased{
+	width: 55px;
+}
+.side-menu-decreased .side-menu-toggle i{
+	transform: rotate(180deg);
+}
+.side-menu-decreased ~ .main-content{
+	margin-left: 55px;
+}
+.side-menu-decreased .logo{
+	background: none;
+	left: 100%;
+	padding: 10px;
+	position: relative;
+	width: 190px;
 }
