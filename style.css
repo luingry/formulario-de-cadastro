@@ -88,13 +88,16 @@ html, body, .main-container{
 	display: flex;
 }
 .side-menu{
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 	height: 100%;
 	position: fixed;
 	width: 320px;
 	z-index: 2;
 }
 .side-menu .item span{
-	color: #FAFAFA
+	align-items: center;
+	color: #FAFAFA;
+	display: flex;
 }
 .main-content{
 	height: 100%;
@@ -218,14 +221,14 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 	display: none;
 }
 .radio-container label{
-		border-radius: 2px;
-		cursor: pointer;
-		border: 1px solid #bfbfbf;
-		color: #bfbfbf;
-		font-size: 13px;
-		display: inline-flex;
-		margin-right: 5px;
-		padding: 7px;
+	border-radius: 2px;
+	cursor: pointer;
+	border: 1px solid #bfbfbf;
+	color: #bfbfbf;
+	font-size: 13px;
+	display: inline-flex;
+	margin-right: 5px;
+	padding: 7px;
 }
 .radio-container input:checked + label{
 	background: #bfbfbf;
@@ -236,4 +239,42 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 	font-size: 15px;
 	margin: 10px 0;
 	width: 100%;
+}
+.logo{
+	background: white;
+	padding: 50px;
+}
+.link-list .item{
+	align-items: center;
+	columns: #fafafa;
+	cursor: pointer;
+	display: flex;
+	font-size: 15px;
+	height: 50px;
+	padding-left: 20px;
+	user-select: none;
+}
+.link-list .item i{
+	font-size: 20px;
+	margin-right: 20px;
+}
+.link-list .item:hover{
+	background-color: rgba(255, 255, 255, 0.15);
+}
+.link-list .item:active{
+	background-color: rgba(255, 255, 255, 0.3)
+}
+.side-menu-toggle{
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 20px;
+  left: 100%;
+  top: 50%;
+  opacity: 0.5;
+  padding: 10px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.side-menu-toggle:hover{
+	opacity: 0.8;
 }
