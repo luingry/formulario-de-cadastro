@@ -159,7 +159,7 @@ html, body, .main-container{
 	position: relative;
 }
 .input-container label{
-	bottom: 12.5px;
+	bottom: 25%;
 	color: #9E9E9E;
 	font-size: 15px;
 	left: 0;
