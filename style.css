@@ -53,12 +53,14 @@ table {
 
 .dark-primary-color    { background: #001f31; }
 .default-primary-color { background: #9E9E9E; }
+.dark-primary-text-color { color: #001f31; }
 .light-primary-color   { background: #FAFAFA; }
 .text-primary-color    { color: #212121; }
 .accent-color          { background: #ff8204; }
+.text-accent-color, .input-container input:disabled ~ label, .input-container input:focus ~ label, .input-container input:valid ~ label		 { color: #ff8204; }
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
-.divider-color         { background-color: #bfbfbf; }
+.divider-color         { background: #bfbfbf; }
 
 /*Material Pallete end here*/
 *{
@@ -125,6 +127,7 @@ html, body, .main-container{
 }
 .form-options{
 	display: flex;
+	justify-content: flex-end;
 	margin-top: 20px;
 }
 .button{
@@ -146,15 +149,6 @@ html, body, .main-container{
 .button:active{
 	opacity: 0.6;
 }
-.button--add{
-	background-color: #ff8204;
-}
-.button--save{
-	background-color: #bfbfbf;
-}
-.button--delete{
-	background-color: #bfbfbf;
-}
 .input-container{
 	align-items: center;
 	display: inline-flex;
@@ -171,7 +165,6 @@ html, body, .main-container{
 }
 .input-container input:disabled ~ label, .input-container input:focus ~ label, .input-container input:valid ~ label{
 	bottom: 100%;
-	color: #ff8204;
 	font-size: 12px;
 	transition: all 200ms ease-in-out;
 }
@@ -183,7 +176,6 @@ html, body, .main-container{
 	color: #bfbfbf;
 }
 .input-underline{
-	background: #ff8204;
 	bottom: 0;
 	left: 0;
 	height: 2px;
@@ -195,8 +187,11 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 }
 .box-title{
 	display: block;
-	margin-bottom: 40px;
-	width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
 }
 .tip-box i{
 	color: #91b5ca;
@@ -207,6 +202,7 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 	align-items: center;	
 	border: 1px solid;
 	border-radius: 2px;	
+	box-sizing: border-box;
 	display: flex;
 	font-size: 13px;
 	margin-bottom: 20px;
@@ -217,4 +213,21 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 	background-color: #dcf2ff;
 	border-color: #91b5ca;
 	color: #91b5ca;
+}
+.radio-container input{
+	display: none;
+}
+.radio-container label{
+		border-radius: 2px;
+		cursor: pointer;
+		border: 1px solid #bfbfbf;
+		color: #bfbfbf;
+		font-size: 13px;
+		display: inline-flex;
+		margin-right: 5px;
+		padding: 7px;
+}
+.radio-container input:checked + label{
+	background: #bfbfbf;
+  color: #fafafa;
 }
