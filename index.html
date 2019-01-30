@@ -22,25 +22,36 @@
 			</nav>
 			<div class="main-content light-primary-color">
 				<div class="box-group">
-					<div class="item item--active">Cadastrar novo modelo ou ver modelos existentes<br> Interação do botão salvar ao editar qualquer informação</div>
+					<div class="item item--active">Cadastrar novo modelo ou ver modelos existentes<br> Interação do botão salvar ao editar qualquer informação<br>Reunir todas as cores em um grupo de seletores css</div>
 					<div class="item item--active">
-						Cadastro de Modelos
+						<span class="box-title">Cadastro de Modelos</span>
 						<div class="input-container">
+							<input disabled type="text" name="codigo" value="1" required>
 							<label>Código</label>
-							<input disabled="true" type="text" name="codigo" value="1">
+							<span class="input-underline"></span>
 						</div>
 						<div class="input-container">
+							<input type="text" name="modelo" value="Imóvel" required>
 							<label>Modelo</label>
-							<input type="text" name="modelo" value="Imóvel">
+							<span class="input-underline"></span>
 						</div>
-						<div class="radius-container">
+						<div class="input-container">
+							<input for="modelo" type="text" name="modelo" value="" required>
+							<label for="modelo">Modelo</label>
+							<span class="input-underline"></span>
+						</div>
+						<div class="radio-container">
 							<input id="imovel" type="radio" name="modelo" value="imovel">
 							<label for="imovel">Imóvel</label>
-							<input id="movel" type="radio" name="modelo" value="movel"><label for="movel">Móvel</label>
-							<input id="cnae" type="radio" name="modelo" value="cnae"><label for="cnae">CNAE</label>
-							<input id="rural" type="radio" name="modelo" value="rural"><label for="rural">Rural</label>
+							<input id="movel" type="radio" name="modelo" value="movel">
+							<label for="movel">Móvel</label>
+							<input id="cnae" type="radio" name="modelo" value="cnae">
+							<label for="cnae">CNAE</label>
+							<input id="rural" type="radio" name="modelo" value="rural">
+							<label for="rural">Rural</label>
 							<input id="condominio" type="radio" name="modelo" value="condominio"><label for="condominio">Condominio</label>
-							<input id="avulso" type="radio" name="modelo" value="avulso"><label for="avulso">Avulso</label>
+							<input id="avulso" type="radio" name="modelo" value="avulso">
+							<label for="avulso">Avulso</label>
 						</div>
 						<div class="form-options">
 								<div class="button button--add"><span>Novo modelo</span></div>

@@ -61,12 +61,23 @@ table {
 .divider-color         { background-color: #bfbfbf; }
 
 /*Material Pallete end here*/
+*{
+	transition: all 200ms ease-in-out;
+}
 body{
 	background-color: #FAFAFA;
 	font-family: "Montserrat";
 }
-input{
+input[type="text"]{
+	border: none;
+	border-bottom: 1px solid #9E9E9E;
+	box-sizing: border-box;
+	background-color: unset;
 	font-family: "Montserrat";
+	font-size: 15px;
+	height: 30px;
+	outline: none;
+
 }
 html, body, .main-container{
 	height: 100%;
@@ -127,10 +138,10 @@ html, body, .main-container{
 	user-select: none;
 }
 .button:hover{
-	opacity: 0.9;
+	opacity: 0.8;
 }
 .button:active{
-	opacity: 0.8;
+	opacity: 0.6;
 }
 .button--add{
 	background-color: #ff8204;
@@ -140,4 +151,47 @@ html, body, .main-container{
 }
 .button--delete{
 	background-color: #bfbfbf;
+}
+.input-container{
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+	position: relative;
+}
+.input-container label{
+	bottom: 12.5px;
+	color: #9E9E9E;
+	font-size: 15px;
+	left: 0;
+	position: absolute;
+	transition: all 200ms ease-in-out;
+}
+.input-container input:disabled ~ label, .input-container input:focus ~ label, .input-container input:valid ~ label{
+	bottom: 100%;
+	color: #ff8204;
+	font-size: 12px;
+	transition: all 200ms ease-in-out;
+}
+.input-container input:disabled ~ label{
+	color: #bfbfbf;
+}
+.input-container input:disabled{
+	background-color: #f5f5f5;
+	color: #bfbfbf;
+}
+.input-underline{
+	background: #ff8204;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	position: absolute;
+	width: 0;
+}
+input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~ .input-underline{
+	width: 100%;
+}
+.box-title{
+	display: block;
+	margin-bottom: 40px;
+	width: 100%;
 }
