@@ -304,3 +304,26 @@ input:disabled ~ .input-underline, input:focus ~ .input-underline, input:valid ~
 	position: relative;
 	width: 190px;
 }
+.lista-grupo-de-modelos table{
+	width: 100%;
+}
+.lista-grupo-de-modelos td, .lista-grupo-de-modelos th{
+	color: black;
+	font-size: 15px;
+	height: 40px;
+	padding-left: 20px;
+	text-align: left;
+	vertical-align: middle;
+}
+.lista-grupo-de-modelos th{
+	font-weight: bold;
+}
+.lista-grupo-de-modelos tr:nth-child(odd){
+	background:gray;
+}
+.lista-grupo-de-modelos tr{
+	opacity: 0.5;
+}
+.list-grupo-de-modelos tr:hover{
+
+}
